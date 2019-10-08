@@ -2,7 +2,7 @@
 
 Permite loguearse y registrarse
 
-## Registrarse
+## Registro
 
 * endpoint: localhost:3000/auth/
 * petición (POST):
