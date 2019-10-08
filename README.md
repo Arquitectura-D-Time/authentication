@@ -1,24 +1,28 @@
-# README
+# Autenticación
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Permite loguearse y registrarse
 
-Things you may want to cover:
+## Registrarse
 
-* Ruby version
+* endpoint: localhost:3000/auth/
+* petición (POST):
 
-* System dependencies
+{
+  "email": "ejemplo@email.com",  
+  "name": "nombre_ej",  
+  "nickname": "ej",  
+  "password": "123456",  
+  "password_confirmation": "123456"  
+}
+* respuesta: 200 OK
 
-* Configuration
+## Login
 
-* Database creation
+* endpoint: localhost:3000/auth/sign_in
+* petición (POST):
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+{
+  "email": "ejemplo@email.com",  
+  "password": "123456"
+}
+* respuesta: 200 OK
