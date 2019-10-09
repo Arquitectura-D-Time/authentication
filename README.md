@@ -4,7 +4,7 @@ Permite loguearse y registrarse
 
 ## Registro
 
-* endpoint: localhost:3000/auth/
+* endpoint: localhost:5001/auth/
 * petición (POST):
 
 {
@@ -18,7 +18,7 @@ Permite loguearse y registrarse
 
 ## Login
 
-* endpoint: localhost:3000/auth/sign_in
+* endpoint: localhost:5001/auth/sign_in
 * petición (POST):
 
 {
