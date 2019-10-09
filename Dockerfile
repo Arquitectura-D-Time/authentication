@@ -6,7 +6,7 @@ WORKDIR /authentication_ms
 ADD Gemfile /authentication_ms/Gemfile
 ADD Gemfile.lock /authentication_ms/Gemfile.lock
 
-RUN apt-get update && apt-get install nodejs &&
+RUN apt-get update && apt-get install nodejs
     
 RUN bundle install
     
