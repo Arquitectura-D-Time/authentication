@@ -40,7 +40,7 @@ paths:
         '500':
           description: Internal Server Error
           schema:
-            $ref: '#/definitions/ErrorModel'
+            $ref: '#/definitions/ErrorServer'
             
   /auth/sign_in:
     post:
@@ -67,8 +67,8 @@ paths:
         '500':
           description: Internal Server Error
           schema:
-            $ref: '#/definitions/ErrorModel'
- 
+            $ref: '#/definitions/ErrorServer'
+
   /users/{id}:
     get:
       summary: Retorna un usuario con su id
@@ -91,8 +91,8 @@ paths:
         '500':
           description: Internal Server Error
           schema:
-            $ref: '#/definitions/ErrorModel'
- 
+            $ref: '#/definitions/ErrorServer'
+
 # Definitions
 definitions:
   UserInput:
@@ -140,7 +140,7 @@ definitions:
         type: string
       updated_at:
         type: string
- 
+
   # Errors
   ErrorEmail:
     type: object
@@ -168,6 +168,18 @@ definitions:
       error:
         type: string
       exception:
+        type: string
+      traces:
+        type: object
+  
+  ErrorServer:
+    type: object
+    properties:
+      status:
+        type: integer
+      error: 
+        type: string
+      exception: 
         type: string
       traces:
         type: object

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :users, only: [:show]
+  resources :users, only: [:show, :create]
   mount_devise_token_auth_for 'User', at: 'auth',
   controllers: {
     sessions: 'sessions'

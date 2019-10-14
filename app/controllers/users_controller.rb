@@ -4,7 +4,9 @@ class UsersController < ApplicationController
 
   def show 
 	  @user = User.find(params[:id])
-	  render json: @user
+    render json: @user 
+    #render :json=> @user.as_json(:tokens=>@user.tokens)
+    #render :json=> @user.as_json(:token=>@user.tokens)
   end 
 
   private
