@@ -26,3 +26,7 @@ Permite loguearse y registrarse
   "password": "123456"
 }
 * respuesta: 200 OK
+
+## Consulta
+* endpoint: localhost:5001/users/id
+* petición (GET):
