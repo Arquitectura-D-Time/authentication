@@ -30,3 +30,5 @@ Permite loguearse y registrarse
 ## Consulta
 * endpoint: localhost:5001/users/id
 * petición (GET):
+
+Fuente: https://devise-token-auth.gitbook.io/devise-token-auth/usage
