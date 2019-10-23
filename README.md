@@ -16,7 +16,7 @@ Permite loguearse y registrarse
 }
 * respuesta: 200 OK
 
-## Login
+## Iniciar sesión
 
 * endpoint: localhost:5001/auth/sign_in
 * petición (POST):
@@ -31,5 +31,11 @@ Permite loguearse y registrarse
 * endpoint: localhost:5001/users/id
 * petición (GET):
 
+## Cerrar sesión
+* endpoint: localhost:5001/auth/sign_out
+* petición (DELETE):
+
+En los Headers, pasar parametros de access-token, client y uid
+* respuesta: 200 OK
 
 Fuente: https://devise-token-auth.gitbook.io/devise-token-auth/usage
