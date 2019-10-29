@@ -1,6 +1,17 @@
-# Autenticación
+# Microservicio de Autenticación
 
-Permite loguearse y registrarse
+Permite loguearser, registrarse y consultas a usuarios por id y todos
+
+## Iniciar sesión (Unico usuario para pruebas)
+
+* endpoint: localhost:5001/auth/sign_in
+* petición (POST):
+
+{
+  "email": "ercruzr@unal.edu.co",  
+  "password": "123456"
+}
+* respuesta: 200 OK
 
 ## Registro
 
@@ -16,25 +27,19 @@ Permite loguearse y registrarse
 }
 * respuesta: 200 OK
 
-## Iniciar sesión (Unico usuario para pruebas)
-
-* endpoint: localhost:5001/auth/sign_in
-* petición (POST):
-
-{
-  "email": "ercruzr@unal.edu.co",  
-  "password": "123456"
-}
-* respuesta: 200 OK
-
-## Consulta
+## Consulta por id del usuario
 * endpoint: localhost:5001/users/id
 * petición (GET):
+* respuesta: 200 OK
+
+## Consulta todos los usuarios
+* endpoint: localhost:5001/users/
+* petición (GET):
+* respuesta: 200 OK
 
 ## Cerrar sesión
 * endpoint: localhost:5001/auth/sign_out
 * petición (DELETE):
-
 En los Headers, pasar parametros de access-token, client y uid
 * respuesta: 200 OK
 
