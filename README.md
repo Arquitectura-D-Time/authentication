@@ -1,6 +1,6 @@
 # Microservicio de Autenticación
 
-Permite loguearser, registrarse y consultas a usuarios por id y todos
+Permite loguearse, registrarse y realizar consultas a usuarios por id y para verlos todos
 
 ## Iniciar sesión (Unico usuario para pruebas)
 
