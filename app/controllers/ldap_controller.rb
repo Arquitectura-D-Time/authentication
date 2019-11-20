@@ -24,7 +24,7 @@ class LdapController < ApplicationController
         if connect()
             puts("ME CONECTE XDXDXDX")
             ldap = Net::LDAP.new(
-                host: '172.20.0.1',
+                host: '146.148.107.218',
                 port: 389,
                 auth: {
                     method: :simple,
